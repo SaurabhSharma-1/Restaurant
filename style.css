@@ -1,0 +1,85 @@
+
+.logo{
+    width: 100px;
+    box-shadow: 0 0 0 0.2px rgb(95, 94, 94);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(224, 144, 70);
+    margin-bottom: 5px;    
+}
+.headerText{
+    display: flex;
+    margin: 10px;
+    color: black;
+}
+.headerText>Link{
+    margin: 0 10px 0 10px;
+}
+.header>ul{
+    list-style: none;
+    display: flex;
+    margin-right: 80px;
+    align-items: center;
+    color: black;
+}
+.header>ul>li{
+    margin: 2px;
+}
+.header>ul>link{
+    color: black;
+    
+}
+.Card{  
+    width: 150px;
+    border: 1px solid black;
+    align-items: center;
+    margin: 15px;
+    color: black;
+    text-decoration: none;
+    overflow:hidden;
+    overflow-wrap: anywhere;
+}
+.Card>img{
+    height: 110px;
+    width: 140px;
+    margin-left: 5px;
+}
+.RestaurantCard{
+    display: flex;
+    flex-wrap: wrap;
+}
+.logButton{
+    margin: 0 10 0 10;
+}
+/* .shimmer{
+    display: flex;
+    flex-wrap: wrap;
+} */
+.shim{
+    height: 200px;
+    width: 150px;
+    background-color: rgb(240, 237, 237);
+    margin: 20px;
+}
+.RestaurantPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: teal; */
+}
+a:link { 
+    color: black;
+    text-decoration: none; 
+} 
+a:visited { 
+    text-decoration: none; 
+} 
+a:hover { 
+    text-decoration: none; 
+} 
+a:active { 
+    text-decoration: none; 
+}
