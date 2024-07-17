@@ -1,0 +1,87 @@
+.logo {
+  width: 100px;
+  box-shadow: 0 0 0 .2px #5f5e5e;
+}
+
+.header {
+  background-color: #e09046;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.headerText {
+  color: #000;
+  margin: 10px;
+  display: flex;
+}
+
+.headerText > Link {
+  margin: 0 10px;
+}
+
+.header > ul {
+  color: #000;
+  align-items: center;
+  margin-right: 80px;
+  list-style: none;
+  display: flex;
+}
+
+.header > ul > li {
+  margin: 2px;
+}
+
+.header > ul > link {
+  color: #000;
+}
+
+.Card {
+  color: #000;
+  overflow-wrap: anywhere;
+  border: 1px solid #000;
+  align-items: center;
+  width: 150px;
+  margin: 15px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.Card > img {
+  width: 140px;
+  height: 110px;
+  margin-left: 5px;
+}
+
+.RestaurantCard {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.logButton {
+  margin: 0 10px;
+}
+
+.shim {
+  background-color: #f0eded;
+  width: 150px;
+  height: 200px;
+  margin: 20px;
+}
+
+.RestaurantPage {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+/*# sourceMappingURL=index.3a01df49.css.map */
