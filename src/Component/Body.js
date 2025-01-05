@@ -19,12 +19,16 @@ const Body = () =>{
     },[]);
 
     async function call(){
-        const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.090699082120356&lng=73.01001868731078&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING');
+
+        const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.090699082120356&lng=73.01001868731078&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING')
+
+
         const json = await data.json();
         setRestCopy(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setfiltered(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-        setTest(data);
-        // console.log(test);
+        // setTest(json.data);
+        // console.log(test);    
+
     }
 
     // console.log(user);
@@ -65,11 +69,11 @@ const Body = () =>{
                 });
             }}/> */}
         </div>
-        <h1 className=" bg-red-400 text-xl mx-20 flex justify-center items-center">Hi! I have Lot to work on It. But still you can check little Features</h1>
+        {/* <h1 className=" bg-red-400 text-xl mx-20 flex justify-center items-center">Hi! I have Lot to work on It. But still you can check little Features</h1> */}
         <div className='flex flex-wrap items-center justify-center'>
         {
             (filtered.length===0)?<h1>No Such Restaurant Found!</h1>: filtered.map(Rest=>{
-            return( <Link to= {"restaurant/"+Rest.info.id} key={Rest.info.id}>
+            return( <Link to = {"restaurant/"+Rest.info.id} key={Rest.info.id}>
                 <Card {...Rest.info} />           
                 </Link>)
             })

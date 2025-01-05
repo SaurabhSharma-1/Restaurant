@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
 
-const useRestfetch = (resId) =>{
+const useMenu = (resId) =>{
 
     let temp = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=19.090699082120356&lng=73.01001868731078&restaurantId=${resId}&catalog_qa=undefined&submitAction=ENTER`
 
@@ -16,7 +16,7 @@ const useRestfetch = (resId) =>{
         const json = await data.json();
         // console.log("useEffect");
         // setRestData(json.data.cards[3]); // will helpful in relevant
-        setRestaurant(json.data.cards[2].card.card.info);
+        setRestaurant(json.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards);
         
     }
 
@@ -25,4 +25,4 @@ const useRestfetch = (resId) =>{
     return restaurant;
 }
 
-export default useRestfetch;
+export default useMenu;

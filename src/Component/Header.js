@@ -20,7 +20,7 @@ const Header = () => {
     }
 
     return (
-    <div class='flex justify-between rounded-md bg-violet-600 font-semibold'>
+    <div className='flex justify-between rounded-md bg-violet-600 font-semibold'>
         <Title/>
         <ul className="flex items-center text-white text-xl mr-8">
             <div className="flex">
